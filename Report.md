@@ -61,7 +61,7 @@ Score of 0.5069000075757504 achieved in 697 episodes
 ![Plot of Rewards][image1]
 
 ## Ideas of Future Work
-The training is not very stable. The same model / hyperparameters sometimes converge quickly but the other times don't. If there is more time, more hyperparameters will be tried.
-Also other algorithms can be tried, such as A3C.
+The training is not very stable. The same model and hyperparameters sometimes converge quickly but the other times don't. More hyperparameters / model need be tried.
+Other algorithms can be tried as well, such as A3C.
 
 
