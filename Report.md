@@ -15,21 +15,21 @@ LR_ACTOR(float): The learning rate of the actor, set to 0.001
 
 LR_CRITIC(float): The learning rate of the critic, set to 0.001
 
-WEIGHT_DECAY = 0        # L2 weight decay
+WEIGHT_DECAY(int): L2 weight decay
 
-LEARN_EVERY = 1         # learning timestep interval
+LEARN_EVERY(int): The learning timestep interval, set to 1
 
-LEARN_NUM = 5           # number of learning passes
+LEARN_NUM(int): The number of learning passes, set to 5
 
-GAMMA = 0.99            # discount factor
+GAMMA(float): The discount factor, set to 0.99
 
-TAU = 8e-3              # for soft update of target parameters
+TAU(float): The parameter for soft update of target parameters, set to 0.008
 
-EPS_START = 5.0         # initial value for epsilon in noise decay process in Agent.act()
+EPS_START(float): The initial value for epsilon in noise decay process in Agent.act(), set to 5.0
 
-EPS_EP_END = 300        # episode to end the noise decay process
+EPS_EP_END(int): The number of episode to end the noise decay process, set to 300
 
-EPS_FINAL = 0           # final value for epsilon after decay
+EPS_FINAL(float): The final value for epsilon after decay, set to 0.0
 
 ## Neural Network
 Actor and Critic network models were defined in the class Actor and Critic in the notebook. 
@@ -37,8 +37,24 @@ Actor and Critic network models were defined in the class Actor and Critic in th
 The Actor networks utilised two fully connected layers with 256 and 128 units with relu activation and tanh activation for the action space. The network has an initial dimension the same as the state size.
 
 The Critic networks utilised two fully connected layers with 256 and 128 units with relu activation. The critic network has  an initial dimension the size of the state size plus action size.
+
+
 ## Plot of Rewards
 [image1]:./score.png
+
+Episode 1 - 100	Max Score 0.20	Average Score 0.01
+
+Episode 101 - 200	Max Score 0.30	Average Score 0.03
+
+Episode 201 - 300	Max Score 0.20	Average Score 0.02
+
+Episode 301 - 400	Max Score 0.30	Average Score 0.05
+
+Episode 401 - 500	Max Score 0.50	Average Score 0.09
+
+Episode 501 - 600	Max Score 0.80	Average Score 0.16
+
+Score of 0.5069000075757504 achieved in 697 episodes
 
 ![Plot of Rewards][image1]
 
