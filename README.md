@@ -41,6 +41,6 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 Follow the instructions in `Tennis.ipynb` to get started with training the agents.  Note that the code start from 'Section 4 - It's your turn!'
 
-When the training is finished the model weights will be saved in checkpoint_actor_0.pth, checkpoint_actor_1.pth, checkpoint_critic_0.pth, and checkpoint_critic_1.pth.
+When the training is finished the model weights will be saved in checkpoint_actor0.pth, checkpoint_actor1.pth, checkpoint_critic0.pth, and checkpoint_critic1.pth.
 
 
